@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Categories Movie DetailVC-->
+        <scene sceneID="bjn-Fw-bb5">
+            <objects>
+                <viewController storyboardIdentifier="CategoriesMovieDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DU0-yS-x2a" customClass="CategoriesMovieDetailVC" customModule="garagecoders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rfv-6c-O8l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiH-ZY-lsy">
+                                <rect key="frame" x="16" y="108" width="382" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iX1-GD-ae0">
+                                <rect key="frame" x="36" y="174" width="342" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BT9-au-uEt">
+                                <rect key="frame" x="36" y="141" width="342" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iX1-GD-ae0" firstAttribute="top" secondItem="BT9-au-uEt" secondAttribute="bottom" constant="16" id="Nju-6t-EXM"/>
+                            <constraint firstItem="BT9-au-uEt" firstAttribute="leading" secondItem="igI-Gh-7iD" secondAttribute="leading" constant="36" id="PeD-3U-ZsG"/>
+                            <constraint firstItem="igI-Gh-7iD" firstAttribute="trailing" secondItem="iX1-GD-ae0" secondAttribute="trailing" constant="36" id="YOl-YM-9cT"/>
+                            <constraint firstItem="RiH-ZY-lsy" firstAttribute="leading" secondItem="igI-Gh-7iD" secondAttribute="leading" constant="16" id="bYg-KA-nbG"/>
+                            <constraint firstItem="igI-Gh-7iD" firstAttribute="trailing" secondItem="RiH-ZY-lsy" secondAttribute="trailing" constant="16" id="dlL-uF-acN"/>
+                            <constraint firstItem="iX1-GD-ae0" firstAttribute="leading" secondItem="igI-Gh-7iD" secondAttribute="leading" constant="36" id="ji2-bL-2it"/>
+                            <constraint firstItem="RiH-ZY-lsy" firstAttribute="top" secondItem="igI-Gh-7iD" secondAttribute="top" constant="64" id="kkl-UL-VJ1"/>
+                            <constraint firstItem="BT9-au-uEt" firstAttribute="top" secondItem="RiH-ZY-lsy" secondAttribute="bottom" constant="16" id="lOu-he-VV7"/>
+                            <constraint firstItem="igI-Gh-7iD" firstAttribute="trailing" secondItem="BT9-au-uEt" secondAttribute="trailing" constant="36" id="wGk-dl-Xr0"/>
+                            <constraint firstItem="BT9-au-uEt" firstAttribute="top" secondItem="RiH-ZY-lsy" secondAttribute="bottom" constant="16" id="zaG-vH-c3b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="igI-Gh-7iD"/>
+                    </view>
+                    <connections>
+                        <outlet property="movieDescription" destination="iX1-GD-ae0" id="I96-rl-nJK"/>
+                        <outlet property="subtitle" destination="BT9-au-uEt" id="s0r-Ow-Kle"/>
+                        <outlet property="year" destination="RiH-ZY-lsy" id="psn-lh-zkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJg-8p-lhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="168"/>
+        </scene>
+    </scenes>
+</document>
